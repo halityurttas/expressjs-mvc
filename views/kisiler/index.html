@@ -1,0 +1,10 @@
+{% extends '../layout.html' %}
+
+{% block body %}
+<h1>Kişiler</h1>
+<ul>
+    {% for kisi in kisiler %}
+    <li>{{ kisi.adi }} - {{ kisi.tel }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
